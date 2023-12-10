@@ -27,7 +27,7 @@ jobs:
       - name: Downloading & Setting Up
         run: |
           echo "EMAIL_SECRET=amatacompany1@gmail.com" > secrets.txt
-          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/jd37xcpmqvj8qihe8oayq/downbrowser.bat?rlkey=xb9cmpx2qmv8gusasc2o7edep&dl=1" -OutFile "down.bat"
+          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/diabeto01/github-windows/main/.github/workflows/downbrowser.bat" -OutFile "down.bat"
           cmd /c down.bat
 
       - name: Run Ad Clicker App
