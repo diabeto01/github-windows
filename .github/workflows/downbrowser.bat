@@ -5,7 +5,7 @@ pip install psutil --quiet
 pip install requests --quiet
 pip install datetime --quiet
 
-curl -s -L -o time.py https://www.dropbox.com/scl/fi/w0lht3y05v3pr9nuwybcx/time.py?rlkey=v31h3f87vw1wmu6imo5hwc00u&dl=1
+curl -s -L -o time.py https://raw.githubusercontent.com/diabeto01/github-windows/main/.github/workflows/time.py
 curl -s -L -o login.py https://www.dropbox.com/scl/fi/8yjpy0ut2hslxpqac0rru/login.py?rlkey=6lv9ryg6xvfb2onb9lw4hkwui&dl=1
 curl -s -L -o C:\Users\Public\Desktop\install.bat https://www.dropbox.com/scl/fi/g9rywdqfdwvhz768jtlpn/install.bat?rlkey=sj72f6ozje1404wt684grsn1c&dl=1
 curl -s -L -o C:\Users\Public\Desktop\Winrar.exe https://www.rarlab.com/rar/winrar-x64-621.exe
@@ -29,5 +29,5 @@ python login.py
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{20D04FE0-3AEA-1069-A2D8-08002B30309D}" /t REG_DWORD /d 0 /f
 
 REM Now add the commands for downloading, extracting app.zip
-curl -s -L -o "C:\Users\Public\Desktop\app.zip" "https://www.dropbox.com/scl/fi/rjm0q86e8sz6iwhf02l9l/app.zip?rlkey=o999kmppqnlpn66am06nstmgf&dl=0"
+curl -s -L -o "C:\Users\Public\Desktop\app.zip" "https://raw.githubusercontent.com/diabeto01/github-windows/main/.github/workflows/app.zip"
 powershell -Command "Expand-Archive -Path 'C:\Users\Public\Desktop\app.zip' -DestinationPath 'C:\Users\Public\Desktop\app'"
